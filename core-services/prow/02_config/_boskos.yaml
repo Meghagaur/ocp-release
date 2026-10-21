@@ -106,6 +106,10 @@ resources:
   min-count: 1
   state: free
   type: aro-hcp-dev-image-push-quota-slice
+- names:
+  - aro-hcp-dev-infrastructure-identities-00
+  state: free
+  type: aro-hcp-dev-infrastructure-identities
 - max-count: 14
   min-count: 14
   state: free
@@ -5432,6 +5436,10 @@ resources:
   - libvirt-s390x-oz-3-3
   state: free
   type: libvirt-s390x-vpn-hcp-quota-slice
+- names:
+  - libvirt-s390x-vpn-ipv6-0-0
+  state: free
+  type: libvirt-s390x-vpn-ipv6-quota-slice
 - names:
   - libvirt-s390x-oz-0-0
   - libvirt-s390x-oz-1-0

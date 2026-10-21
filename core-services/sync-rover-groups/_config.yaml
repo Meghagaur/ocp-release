@@ -124,6 +124,13 @@ groups:
   devsandbox-aws:
     secret_collections:
     - cluster-secrets-devsandboxci-aws
+  ecosystem-engineering:
+    secret_collections:
+    - dpf
+    - nno
+  edge-kmm:
+    secret_collections:
+    - kernel-module-management
   edttj-gsm---edttj--vault--ci-operator:
     secret_collections:
     - edttj--vault--ci-operator
@@ -237,6 +244,7 @@ groups:
     - libvirt-s390x-vpn-virt
     - libvirt-s390x-vpn-arm64
     - libvirt-s390x-vpn-amd64
+    - libvirt-s390x-vpn-ipv6
     - multiarch
     - power-ocp-qe
     - powervc-ipi-cicd-secrets
@@ -388,6 +396,9 @@ groups:
   openshift-storage:
     clusters:
     - app.ci
+  openshift-test-platform:
+    clusters:
+    - app.ci
   openshift-zero-trust-workload-identity-manager-operator-dev:
     secret_collections:
     - ztwim-ci-secrets
@@ -450,10 +461,6 @@ groups:
   rh-ecosystem-edge-pool-admins:
     clusters:
     - hosted-mgmt
-  rh-ecosystem-nvidia:
-    secret_collections:
-    - dpf
-    - nno
   rh-kata-dev:
     clusters:
     - app.ci
@@ -523,6 +530,9 @@ groups:
   stackrox-pool-admins:
     clusters:
     - hosted-mgmt
+  tdrozdow-directs:
+    secret_collections:
+    - rosa-account-manager-service
   team-multicluster-observability:
     secret_collections:
     - ocm-observability-usa-secrets
@@ -679,7 +689,6 @@ groups:
     - joeg-pro-secrets
     - jws-qe
     - kam
-    - kernel-module-management
     - konveyor
     - ksan-operator
     - kubevirt-ipi-provider
@@ -806,7 +815,6 @@ groups:
     - rhoda-test
     - rhtap
     - rosa
-    - rosa-account-manager-service
     - rosa-service-log
     - sail-operator-test
     - sandbox
